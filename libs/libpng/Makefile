@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2006-2012 OpenWrt.org
+# Copyright (C) 2006-2015 OpenWrt.org
 #
 # This is free software, licensed under the GNU General Public License v2.
 # See /LICENSE for more information.
@@ -8,12 +8,16 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=libpng
-PKG_VERSION:=1.2.46
-PKG_RELEASE:=2
+PKG_VERSION:=1.2.56
+PKG_RELEASE:=1
 
-PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.bz2
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.xz
 PKG_SOURCE_URL:=@SF/libpng
-PKG_MD5SUM:=e8b43dc78ef95b3949af7f961d76874b
+PKG_MD5SUM:=868562bd1c58b76ed8703f135a2e439a
+PKG_MAINTAINER:=Jo-Philipp Wich <jow@openwrt.org>
+
+PKG_LICENSE:=Libpng GPL-2.0+ BSD-3-Clause
+PKC_LICENSE_FILES:=LICENSE contrib/gregbook/COPYING contrib/gregbook/LICENSE
 
 PKG_FIXUP:=autoreconf
 PKG_INSTALL:=1
